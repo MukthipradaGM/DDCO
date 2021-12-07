@@ -1,0 +1,6 @@
+module tff (input clk, input q, input t, output q);
+wire s;
+xor g1(s,t,q);
+dfr(clk,s,q);
+end
+endmodule
